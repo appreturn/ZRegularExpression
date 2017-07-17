@@ -104,4 +104,10 @@ public class RegularExpressionUtil {
         String regex = "[\\u4e00-\\u9fa5]";
         return Pattern.matches(regex, chinese);
     }
+
+    // 字符串是否为数字
+    public static boolean isNumeric(String numer) {
+        String regex = "[0-9]*";
+        return Pattern.matches(regex, numer);
+    }
 }

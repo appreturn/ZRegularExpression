@@ -74,5 +74,9 @@ public class MainActivity extends AppCompatActivity {
         // 验证身份证，没有任何返回值的时候验证通过
         String error = ValidIDCard.iDCardValidate("456314651646455");
         Toast.makeText(this, error, Toast.LENGTH_SHORT).show();
+
+        // 是否为数字
+        boolean bool15 = RegularExpressionUtil.isNumeric("40610");
+        Log.d("Log11115", bool15 + "");
     }
 }
